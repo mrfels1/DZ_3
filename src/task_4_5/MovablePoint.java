@@ -1,4 +1,4 @@
-package task_4;
+package task_4_5;
 
 public class MovablePoint implements Movable{
     private int x;
@@ -13,7 +13,8 @@ public class MovablePoint implements Movable{
     }
     @Override
     public String toString(){
-        return "";
+        return ("[point] coords:[" + x + ", "+y+
+                "], speed:["+xSpeed +", "+ ySpeed+"]");
     }
     @Override
     public void moveUp(){

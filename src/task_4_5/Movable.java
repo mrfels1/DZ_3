@@ -1,4 +1,4 @@
-package task_4;
+package task_4_5;
 
 public interface Movable {
     public void moveUp();

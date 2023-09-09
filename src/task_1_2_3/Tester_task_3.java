@@ -6,12 +6,12 @@ public class Tester_task_3 {
 
         System.out.println(s1); // Circle
         System.out.println(s1.getArea()); // Circle
-        System.out.println(s1.getPerimeter()); //
+        System.out.println(s1.getPerimeter()); // Circle
         System.out.println(s1.getColour());
         System.out.println(s1.isFilled());
         System.out.println(((Circle) s1).getRadius()); //недоступен без приведения типов
 
-        Circle c1 = (Circle)s1; // приведение типов
+        Circle c1 = (Circle)s1;
         System.out.println(c1);
         System.out.println(c1.getArea());
         System.out.println(c1.getPerimeter());
@@ -21,20 +21,20 @@ public class Tester_task_3 {
 
         //Shape s2 = new Shape(); //Не скомпелируется тк shape нельзя инициализировать
 
-        Shape s3 = new Rectangle(1.0, 2.0, "RED", false); // приведение типов
+        Shape s3 = new Rectangle(1.0, 2.0, "RED", false);
         System.out.println(s3);
         System.out.println(s3.getArea());
         System.out.println(s3.getPerimeter());
         System.out.println(s3.getColour());
         System.out.println(((Rectangle) s3).getLength());//необходимо приведение типов
 
-        Rectangle r1 = (Rectangle)s3; // приведение типов
+        Rectangle r1 = (Rectangle)s3;
         System.out.println(r1);
         System.out.println(r1.getArea());
         System.out.println(r1.getColour());
         System.out.println(r1.getLength());
 
-        Shape s4 = new Square(6.6); // приведение типов
+        Shape s4 = new Square(6.6);
         System.out.println(s4);
         System.out.println(s4.getArea());
         System.out.println(s4.getColour());
